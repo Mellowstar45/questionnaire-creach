@@ -1,9 +1,11 @@
 import Link from 'next/link'
 export default function Home() {
   return (
-    <div>
-      <h1 className='w-full px-10'>Welcome !</h1>
-      <h2> <Link href="/form">Answer this short Survey here !</Link></h2>
+    <div className= "flex justify-center items-center h-screen" >
+    <div className='text-center'>
+      <h1 className='text-lg'>Welcome !</h1>
+     <p>Answer this short Survey <Link className='text-blue-600' href="/form">here !</Link></p>
+      </div>
     </div>
   );
 }
